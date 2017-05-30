@@ -7,9 +7,10 @@ let defaultColor={
 	c2:'rgb(172,86,245)',
 	d:'rgb(255,137,137)', //粉
 	d2:'rgb(250,100,101)',
-	w:'#ffffff' //白
+	w:'white' //白
 }
 
 export default function(state=defaultColor,action){
-	return state;
+	let copyState=Object.assign({},state);
+	return copyState;
 }
